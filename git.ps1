@@ -7,6 +7,7 @@ if (!(Test-Path -Path ".git")) {
 git add .
 $message = Read-Host "Enter commit message: "
 git commit -S -m "$message"
+git branch -M master
 
 if (!(Test-Path -Path ".git")) {
     $remote = Read-Host "Enter remote URL: "
