@@ -3,22 +3,27 @@
 
 if (!(Test-Path -Path "build")) {
     New-Item -ItemType Directory "build"
+    New-Item -ItemType File -Path "build/.gitkeep"
 }
 
 if (!(Test-Path -Path "src")) {
     New-Item -ItemType Directory "src"
+    New-Item -ItemType File -Path "src/.gitkeep"
 }
 
 if (!(Test-Path -Path "lib")) {
     New-Item -ItemType Directory "lib"
+    New-Item -ItemType File -Path "lib/.gitkeep"
 }
 
 if (!(Test-Path -Path "bin")) {
     New-Item -ItemType Directory "bin"
+    New-Item -ItemType File -Path "bin/.gitkeep"
 }
 
 if (!(Test-Path -Path "include")) {
     New-Item -ItemType Directory "include"
+    New-Item -ItemType File -Path "include/.gitkeep"
 }
 
 if (!(Test-Path -Path ".gitignore")) {
@@ -35,6 +40,7 @@ if (!(Test-Path -Path "README.md")) {
 
 if (!(Test-Path -Path "testing")) {
     New-Item -ItemType Directory "testing"
+    New-Item -ItemType File -Path "testing/.gitkeep"
 }
 
 # setting up .gitignore
